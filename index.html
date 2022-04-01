@@ -6,13 +6,13 @@
     <title>Unity WebGL Player | MandalikaWave</title>
   </head>
   <body style="text-align: center;" onload="startUp()">
-    <canvas id="unity-canvas" width=504 height=896 style="width: 504px; height: 896px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" style="width: 504px; height: 896px; background: #231F20"></canvas>
     <script src="Build/wave.loader.js"></script>
 		<script>
 			function startUp() {
 				if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        	document.getElementById("unity-canvas").style.width = "100%";
-        	document.getElementById("unity-canvas").style.height = "100%";
+        	document.getElementById("unity-canvas").style.width = "100vw";
+        	document.getElementById("unity-canvas").style.height = "100vh";
       	} else {
         	document.getElementById("unity-canvas").style.width = "504px";
         	document.getElementById("unity-canvas").style.height = "760px";
